@@ -10,11 +10,12 @@ If you think you will need to do something different or with a different archite
 
 ## How to use
 
-0. Move the required .zipped lambda function to the S3 bucket under the correct version-named directory
-1. Install Terraform (On OSX you can just do `brew install terraform` if you trust Homebrew)
-2. The first command to run for a new configuration -- or after checking out an existing configuration from version control -- is `terraform init`, which initializes various local settings and data that will be used by subsequent commands.
-3. Copy `secrets.auto.tfvars.sample` to `secrets.auto.tfvars` and configure your AWS access key and secret in it. Do NOT touch the sample file itself, as it is committed to version control for example purposes only.
-4. Adjust the variables in to determine which version of the Lambda function to deploy, and which S3 bucket to use.
+0. Create a release (manually) with `cd lambda && zip ../example.zip main.js`
+1. Move the .zip to S3 bucket under the correct version-named directory
+2. Install Terraform (On OSX you can just do `brew install terraform` if you trust Homebrew)
+3. The first command to run for a new configuration -- or after checking out an existing configuration from version control -- is `terraform init`, which initializes various local settings and data that will be used by subsequent commands.
+4. Copy `secrets.auto.tfvars.sample` to `secrets.auto.tfvars` and configure your AWS access key and secret in it. Do NOT touch the sample file itself, as it is committed to version control for example purposes only.
+5. Adjust the variables in to determine which version of the Lambda function to deploy, and which S3 bucket to use.
 x. xxx
 y. yyy
 z. zzz
@@ -28,9 +29,15 @@ z. zzz
 1. Run `terraform plan --destroy` to see what will happen when you initiate destroy.
 2. Run `terraform destroy` and type `yes` to destroy the specified resources.
 
-## Zip code for S3
+## Test with AWS CLI
 
-```
-cd lambda
-zip ../example.zip main.js
-```
+You can invoke this with the following command to ensure everything works:
+
+`aws lambda invoke --region=eu-central-1 --function-name=ServerlessExample output.txt`
+
+
+## To-do
+
+- Creation of S3?
+- API Gateway creation?
+- CI setup for creating the release artifacts (zip file)?

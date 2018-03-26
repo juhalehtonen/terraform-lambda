@@ -10,5 +10,8 @@
 # Ignore secrets (API keys etc)
 secrets.auto.tfvars
 
-# Ignore zip file
+# Ignore our zip file that is stored in S3
 example.zip
+
+# Ignore output.txt (used for testing with AWS CLI)
+output.txt
