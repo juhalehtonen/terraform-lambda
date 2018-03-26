@@ -24,7 +24,7 @@ variable "lambda_name" {
 
 variable "lambda_region" {
   description = "Region for the AWS Lambda. Has to match the S3 region."
-  default = "us-west-2"
+  default = "eu-central-1"
 }
 
 variable "lambda_runtime" {

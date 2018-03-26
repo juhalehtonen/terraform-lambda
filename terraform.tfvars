@@ -4,7 +4,7 @@
 # Lambda settings
 lambda_name = "ServerlessExample"
 lambda_runtime = "nodejs6.10"
-lambda_region = "us-west-2"
+lambda_region = "eu-central-1"
 
 # S3 bucket settings
 s3_bucket_name = "terraform-serverless-example"

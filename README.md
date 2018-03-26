@@ -4,7 +4,9 @@ A simple Terraform configuration setup for AWS Lambda and a description of the p
 
 ## Before using
 
-Keep in mind that this is an opinionated approach, as we ignore the built-in versioning and staged deployment mechanisms in AWS Lambda. Often these features are not necessary because changes can be tracked and deployed by keeping the Terraform configuration in a version-control repository. If you think you will need to do something different or with a different architecture, you will need to adapt accordingly.
+Keep in mind that this is an opinionated approach, as we ignore the built-in versioning and staged deployment mechanisms in AWS Lambda. Often these features are not necessary because changes can be tracked and deployed by keeping the Terraform configuration in a version-control repository.
+
+If you think you will need to do something different or with a different architecture, you will need to adapt accordingly.
 
 ## How to use
 
