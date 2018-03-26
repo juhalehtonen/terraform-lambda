@@ -10,11 +10,14 @@ If you think you will need to do something different or with a different archite
 
 ## How to use
 
+0. Move the required .zipped lambda function to the S3 bucket under the correct version-named directory
 1. Install Terraform (On OSX you can just do `brew install terraform` if you trust Homebrew)
 2. The first command to run for a new configuration -- or after checking out an existing configuration from version control -- is `terraform init`, which initializes various local settings and data that will be used by subsequent commands.
 3. Copy `secrets.auto.tfvars.sample` to `secrets.auto.tfvars` and configure your AWS access key and secret in it. Do NOT touch the sample file itself, as it is committed to version control for example purposes only.
 4. Adjust the variables in to determine which version of the Lambda function to deploy, and which S3 bucket to use.
-5. Move the required .zipped lambda function to the S3 bucket under the correct version-named directory
+x. xxx
+y. yyy
+z. zzz
 8. Run `terraform plan` to refresh the current state and to generate an action plan based on the config.
 9. Run `terraform apply` to apply the plan and create resources.
 10. Wait as Terraform provisions AWS Lambda for you.
