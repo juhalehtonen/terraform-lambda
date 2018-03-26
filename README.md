@@ -1,4 +1,4 @@
-# Terraform with AWS Lambda and API Gateway
+# Terraform with AWS Lambda
 
 A simple Terraform configuration setup for AWS Lambda and a description of the proposed workflow.
 
