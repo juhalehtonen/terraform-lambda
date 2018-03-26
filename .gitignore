@@ -9,3 +9,6 @@
 
 # Ignore secrets (API keys etc)
 secrets.auto.tfvars
+
+# Ignore zip file
+example.zip

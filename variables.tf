@@ -10,7 +10,7 @@ variable "aws_access_key" {
   description = "Your AWS access key. Define in secrets.auto.tfvars."
   default = ""
 }
-variable "aws_access_secret" {
+variable "aws_secret_key" {
   description = "Your AWS secret key. Define in secrets.auto.tfvars."
   default = ""
 }
