@@ -17,7 +17,7 @@ Note that this currently only creates the Lambda and the required role to run it
 2. Install Terraform (On OSX you can just do `brew install terraform` if you trust Homebrew)
 3. The first command to run for a new configuration -- or after checking out an existing configuration from version control -- is `terraform init`, which initializes various local settings and data that will be used by subsequent commands.
 4. Copy `secrets.auto.tfvars.sample` to `secrets.auto.tfvars` and configure your AWS access key and secret in it. Do NOT touch the sample file itself, as it is committed to version control for example purposes only.
-5. Adjust the variables in to determine which version of the Lambda function to deploy, and which S3 bucket to use.
+5. Adjust the variables in `terraform.tfvars` to determine which version of the Lambda function to deploy, and which S3 bucket to use.
 6. Run `terraform plan` to refresh the current state and to generate an action plan based on the config.
 7. Run `terraform apply` to apply the plan and create resources.
 8. Wait as Terraform provisions AWS Lambda for you.
