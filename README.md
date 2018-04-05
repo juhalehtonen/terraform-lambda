@@ -41,6 +41,7 @@ You can invoke this with the following command to ensure everything works:
 - API Gateway creation?
 - CI setup for creating the release artifacts (zip file)?
 - What if we have secrets in our Lambda (e.g. Lambda doesn't encrypt at runtime)
+- Check lambda-role.json, is it restrictive enough?
 
 ## Tradeoffs
 

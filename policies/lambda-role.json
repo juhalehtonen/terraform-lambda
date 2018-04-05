@@ -5,8 +5,7 @@
       "Action": "sts:AssumeRole",
       "Principal": {
         "Service": [
-          "lambda.amazonaws.com",
-          "apigateway.amazonaws.com"
+          "lambda.amazonaws.com"
         ]
       },
       "Effect": "Allow",
