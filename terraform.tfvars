@@ -7,5 +7,5 @@ lambda_runtime = "nodejs6.10"
 lambda_region = "eu-central-1"
 
 # S3 bucket settings
-s3_bucket_name = "serverless-testerino-buketterino-123"
-s3_bucket_key = "v1.0.0/example.zip"
+s3_bucket_name = "serverless-tdasdad4-buketterino32"
+s3_bucket_key = "lambda.zip"

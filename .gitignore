@@ -11,7 +11,7 @@
 secrets.auto.tfvars
 
 # Ignore our zip file that is stored in S3
-example.zip
+lambda.zip
 
-# Ignore output.txt (used for testing with AWS CLI)
+# Ignore output.txt (generated if testing with AWS CLI as per README)
 output.txt

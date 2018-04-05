@@ -10,7 +10,7 @@ If you think you will need to do something different or with a different archite
 
 ## How to use
 
-Note that this currently only creates the Lambda and the required role to run it. 
+Note that this currently only creates the Lambda and the required role to run it.
 
 0. Create a release (manually) with `cd lambda && zip ../example.zip main.js`
 1. Move the .zip to S3 bucket under the correct version-named directory
@@ -40,3 +40,10 @@ You can invoke this with the following command to ensure everything works:
 - Creation of S3?
 - API Gateway creation?
 - CI setup for creating the release artifacts (zip file)?
+- What if we have secrets in our Lambda (e.g. Lambda doesn't encrypt at runtime)
+
+## Tradeoffs
+
+Tradeoffs are everywhere. This repo is full of them.
+
+We are not using AWS Lambda and API Gateway have built-in versioning but we aren't using them. Should we?
